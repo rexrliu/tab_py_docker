@@ -35,6 +35,6 @@ EXPOSE 9004
 
 ################################################################################
 # create startup script and set ENTRYPOINT
-#ADD start.sh /usr/local/sbin
-#ENTRYPOINT ["/bin/bash", "/usr/local/sbin/start.sh"]
-#CMD ["tabpy", "tabpy"]
+ADD start.sh /usr/local/sbin
+ENTRYPOINT ["/bin/bash", "/usr/local/sbin/start.sh"]
+CMD ["tabpy", "tabpy"]
